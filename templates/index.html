@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy - Fitness Planner</title>
+</head>
+
+<body>
+
+    <h1>FitBuddy</h1>
+    <h2>Personalized Fitness Planner</h2>
+
+    <form action="/generate" method="post">
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>User ID:</label><br>
+        <input type="text" name="user_id" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Weight (kg):</label><br>
+        <input type="number" name="weight" required><br><br>
+
+        <label>Fitness Goal:</label><br>
+        <select name="goal" required>
+            <option value="">Select Goal</option>
+            <option value="weight_loss">Weight Loss</option>
+            <option value="muscle_gain">Muscle Gain</option>
+            <option value="general_fitness">General Fitness</option>
+        </select><br><br>
+
+        <label>Workout Intensity:</label><br>
+        <select name="intensity" required>
+            <option value="">Select Intensity</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select><br><br>
+
+        <button type="submit">Generate Fitness Plan</button>
+
+    </form>
+
+</body>
+</html>
